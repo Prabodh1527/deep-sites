@@ -1,18 +1,13 @@
-import { useState } from "react";
+
 import { motion } from "framer-motion";
-import { Phone, MessageCircle, Send, MapPin, CheckCircle2 } from "lucide-react";
+import { Phone, MessageCircle, MapPin } from "lucide-react";
 import { useReveal } from "../hooks/useReveal";
 import { contacts } from "../data/content";
 import { SectionHeading } from "./Services";
 
 export default function Contact() {
   const [ref, visible] = useReveal();
-  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
 
   return (
     <section id="contact" className="relative py-28 md:py-36 bg-abyss overflow-hidden">
@@ -31,31 +26,73 @@ export default function Contact() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-3 rounded-2xl glass-strong p-7 sm:p-9 gradient-border"
           >
-            {submitted ? (
-              <div className="flex h-full min-h-[380px] flex-col items-center justify-center text-center">
-                <CheckCircle2 size={48} className="text-cyan-soft" />
-                <h3 className="mt-5 font-display text-xl font-medium text-fog">Message sent</h3>
-                <p className="mt-2 text-mist max-w-sm">
-                  Thanks for reaching out. We'll get back to you shortly to talk through your project.
+            <div className="space-y-8">
+              <div>
+                <h3 className="font-display text-3xl font-semibold text-fog">
+                  Let's discuss your next project
+                </h3>
+
+                <p className="mt-5 text-mist leading-8">
+                  Whether you need a business website, AI automation, chatbot,
+                  appointment booking system, or a completely custom digital solution,
+                  we're here to help.
+                </p>
+
+                <p className="mt-4 text-mist leading-8">
+                  Share your requirements with us through a phone call, WhatsApp or
+                  email. We'll understand your needs, discuss possible solutions, and
+                  provide a free sample or consultation before moving ahead.
                 </p>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <Field label="Full Name" placeholder="Your name" required />
-                  <Field label="Phone Number" placeholder="Your number" type="tel" required />
+
+              <div className="grid sm:grid-cols-2 gap-5">
+                <div className="rounded-xl bg-surface/50 border border-white/10 p-5">
+                  <h4 className="text-fog font-semibold text-lg">
+                    📞 Call Us
+                  </h4>
+                  <p className="text-mist text-sm mt-2">
+                    Speak directly with our team regarding your project.
+                  </p>
                 </div>
-                <Field label="Email Address" placeholder="you@business.com" type="email" required />
-                <Field label="Tell us about your project" placeholder="What are you looking to build?" textarea required />
-                <button
-                  type="submit"
-                  className="group inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-grad-primary px-7 py-3.5 font-medium text-white shadow-glow transition-transform duration-300 hover:-translate-y-0.5"
-                >
-                  Send Message
-                  <Send size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-                </button>
-              </form>
-            )}
+
+                <div className="rounded-xl bg-surface/50 border border-white/10 p-5">
+                  <h4 className="text-fog font-semibold text-lg">
+                    💬 WhatsApp
+                  </h4>
+                  <p className="text-mist text-sm mt-2">
+                    Get quick responses and discuss your ideas instantly.
+                  </p>
+                </div>
+
+                <div className="rounded-xl bg-surface/50 border border-white/10 p-5">
+                  <h4 className="text-fog font-semibold text-lg">
+                    📧 Email
+                  </h4>
+
+                  <p className="text-mist text-sm mt-3 break-all">
+                    gprabodhchandra@gmail.com
+                  </p>
+
+                  <p className="text-mist text-sm break-all">
+                    diptipatra75588@gmail.com
+                  </p>
+                </div>
+
+                <div className="rounded-xl bg-surface/50 border border-white/10 p-5">
+                  <h4 className="text-fog font-semibold text-lg">
+                    ⏰ Availability
+                  </h4>
+
+                  <p className="text-mist text-sm mt-2">
+                    Monday – Saturday
+                  </p>
+
+                  <p className="text-mist text-sm">
+                    10:00 AM – 8:00 PM
+                  </p>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div
@@ -98,10 +135,20 @@ export default function Contact() {
 
             <div className="relative flex-1 min-h-[200px] rounded-2xl glass overflow-hidden gradient-border flex items-center justify-center">
               <div className="absolute inset-0 opacity-30 bg-grad-radial-violet" />
-              <div className="relative flex flex-col items-center text-mist">
-                <MapPin size={28} className="text-cyan-soft" />
-                <span className="mt-2 text-sm">Map location available on request</span>
-              </div>
+
+                <div className="relative flex flex-col items-center justify-center text-center px-8">
+                  <MapPin size={30} className="text-cyan-soft" />
+
+                  <h3 className="mt-4 text-fog font-display text-xl">
+                    Serving Clients Across India
+                  </h3>
+
+                  <p className="mt-3 text-mist leading-7">
+                    We work completely online and collaborate remotely with businesses,
+                    startups, professionals and organizations across India to build modern
+                    websites, AI automations and digital solutions.
+                  </p>
+                </div>
             </div>
           </motion.div>
         </div>
