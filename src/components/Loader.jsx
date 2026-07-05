@@ -44,7 +44,7 @@ export default function Loader() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              Deep Sites
+              Ratio
             </motion.p>
           </div>
         </motion.div>

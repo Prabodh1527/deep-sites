@@ -78,7 +78,7 @@ export default function Footer() {
                 <path d="M16 40 L32 16 L48 40 L32 48 Z" fill="none" stroke="url(#footGrad)" strokeWidth="3" opacity="0.5" />
                 <path d="M16 48 L32 28 L48 48 L32 56 Z" fill="url(#footGrad)" />
               </svg>
-              <span className="text-fog">Deep<span className="text-gradient">Sites</span></span>
+              <span className="text-fog">RATIO</span>
             </a>
             <p className="mt-5 text-sm text-mist leading-relaxed max-w-xs">
               Building modern digital experiences for growing businesses — websites,
@@ -115,7 +115,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-mist">
-          <p>© {new Date().getFullYear()} Deep Sites. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} RATIO. All rights reserved.</p>
           <p>Designed &amp; built with depth.</p>
         </div>
       </div>

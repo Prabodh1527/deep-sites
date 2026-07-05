@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
  * DepthField — the site's signature visual motif.
  * Several translucent "planes" are stacked in 3D and drift at different
  * speeds in response to scroll + mouse position, literalizing the idea
- * of "depth" that gives Deep Sites its name. Reused (at lower intensity)
+ * of "depth" that gives Ratio its name. Reused (at lower intensity)
  * as a quiet ambient backdrop throughout the page.
  */
 export default function DepthField({ intensity = 1, className = "" }) {

@@ -18,7 +18,7 @@ export default function About() {
             A studio built for businesses that are still writing their story.
           </h2>
           <p className="mt-6 text-mist leading-relaxed">
-            Deep Sites exists for the businesses in motion — the ones opening their first
+            Ratio exists for the businesses in motion — the ones opening their first
             location, launching a new service, or finally ready to look as good online as
             they do in person. We combine considered design with practical automation, so
             your website doesn't just look impressive, it actually does work for you.

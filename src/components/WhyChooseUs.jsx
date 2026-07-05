@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 h-96 w-96 rounded-full bg-violet/10 blur-3xl" />
       <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeading
-          eyebrow="Why Deep Sites"
+          eyebrow="Why Ratio"
           title="The difference is in how we work"
           subtitle="Not just what we build, but how we get there with you."
         />

@@ -197,6 +197,6 @@ export const faqs = [
 ];
 
 export const contacts = [
-  { name: "G. Prabodh Chandra", phone: "7304656349" },
-  { name: "Dipti Tarinicharan Patra", phone: "9326834572" },
+  { name: "Contact 1", phone: "7304656349" },
+  { name: "Contact 2", phone: "9326834572" },
 ];

@@ -44,7 +44,7 @@ export default function Navbar() {
               <path d="M16 40 L32 16 L48 40 L32 48 Z" fill="none" stroke="url(#navGrad)" strokeWidth="3" opacity="0.5" />
               <path d="M16 48 L32 28 L48 48 L32 56 Z" fill="url(#navGrad)" />
             </svg>
-            <span className="text-fog">Deep<span className="text-gradient">Sites</span></span>
+            <span className="text-fog">Ratio</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
