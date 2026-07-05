@@ -37,7 +37,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 mb-8 font-mono text-xs tracking-wider text-cyan-soft"
         >
           <span className="h-1.5 w-1.5 rounded-full bg-cyan animate-pulse" />
-          DIGITAL EXPERIENCES, BUILT WITH DEPTH
+          Reason. Build. Scale.
         </motion.div>
 
         <motion.h1
