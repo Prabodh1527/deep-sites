@@ -70,13 +70,26 @@ export default function Contact() {
                   </h4>
 
                   <p className="text-mist text-sm mt-3 break-all">
-                    gprabodhchandra@gmail.com
+                    devratio26@gmail.com
                   </p>
 
-                  <p className="text-mist text-sm break-all">
-                    diptipatra75588@gmail.com
-                  </p>
                 </div>
+                <a
+                  href="https://www.instagram.com/dev_ratio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-xl border border-white/10 bg-surface/40 p-6 transition-all hover:border-violet-soft/50 hover:-translate-y-1"
+                >
+                  <div className="text-2xl">📷</div>
+
+                  <h3 className="mt-3 font-display text-xl text-fog">
+                    Instagram
+                  </h3>
+
+                  <p className="mt-2 text-mist">
+                    @dev_ratio
+                  </p>
+                </a>
 
                 <div className="rounded-xl bg-surface/50 border border-white/10 p-5">
                   <h4 className="text-fog font-semibold text-lg">
@@ -84,11 +97,11 @@ export default function Contact() {
                   </h4>
 
                   <p className="text-mist text-sm mt-2">
-                    Monday – Saturday
+                    Monday – Sunday
                   </p>
 
                   <p className="text-mist text-sm">
-                    10:00 AM – 8:00 PM
+                    10:00 AM – 9:00 PM
                   </p>
                 </div>
               </div>
